@@ -1,0 +1,52 @@
+{
+  "ciphertext_count_formula": "13 encrypted input ciphertexts (12 feature columns plus target), one packed residual ciphertext, and 13 final gradient ciphertexts",
+  "ciphertext_serialization": "Lattigo MarshalBinary inside uint32-length list",
+  "estimated_security_bits": 128,
+  "frozen_at_utc": "2026-08-12T12:36:59.073901+00:00",
+  "go": {
+    "build_flags": [
+      "-trimpath",
+      "-ldflags=-buildid="
+    ],
+    "version": "go1.26.5"
+  },
+  "lattigo": {
+    "git_commit": "03e551357ce0ae62276727347584040f42939563",
+    "module": "github.com/tuneinsight/lattigo/v5",
+    "version": "v5.0.7"
+  },
+  "levels": 4,
+  "logN": 14,
+  "logP": [
+    61
+  ],
+  "logQ": [
+    55,
+    45,
+    45,
+    45,
+    45
+  ],
+  "log_default_scale": 45,
+  "maximum_multiplicative_depth": 4,
+  "packing_layout": "feature-wise SIMD: slots 0..N-1 contain linked samples, slots N..127 are zero padding; 12 feature ciphertexts and one target ciphertext per owner dataset",
+  "pilot_evidence": {
+    "run_id": "pilot-I-ER-101-20260812T122341.162834Z-66c9b15908bc",
+    "sha256": "d32e55b2d1cc237bff85a1f46a556276c89355c6205e8a0056d49271141e7d3a"
+  },
+  "polynomial_modulus_degree": 16384,
+  "relinearization_keys": 1,
+  "required_depth": 3,
+  "rotation_keys": 7,
+  "rotations": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "scheme": "CKKS",
+  "status": "frozen"
+}

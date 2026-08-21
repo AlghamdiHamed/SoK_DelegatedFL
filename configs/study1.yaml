@@ -1,0 +1,69 @@
+schema_version: 1
+status: protocol_frozen_after_lean_final_amendment
+dataset: PAMAP2_Protocol_only
+subjects:
+  O_1: [S1, S2, S3]
+  O_2: [S4, S5, S6]
+  O_3: [S7, S8, S9]
+activities: [1, 2, 3, 4, 5, 6, 7, 12, 13, 16, 17, 24]
+sample_hz: 100
+window_seconds: 2.56
+stride_seconds: 1.28
+window_rows: 256
+stride_rows: 128
+purity_min: 0.90
+guard_rows_each_side: 256
+partitions:
+  learning: 0.50
+  utility_test: 0.20
+  attacker_auxiliary: 0.15
+  attacker_target: 0.15
+selection_target_per_owner_activity:
+  learning: 10
+  utility_test: 5
+  attacker_auxiliary: 5
+  attacker_target: 5
+features:
+  location: chest
+  channels: [acc16_x, acc16_y, acc16_z, acc6_x, acc6_y, acc6_z, gyro_x, gyro_y, gyro_z, magnet_x, magnet_y, magnet_z]
+  reduction: temporal_mean
+  dimension: 12
+target: median_heart_rate
+model:
+  type: linear_regression
+  loss: half_mean_squared_error
+  rounds: 10
+  optimizer: synchronous_federated_gradient_descent
+  learning_rate: 0.0006653586255336017
+  learning_rate_selection:
+    rule: inverse_largest_eigenvalue_of_pooled_frozen_learning_hessian
+    lambda_max: 1502.948878430822
+    strict_stability_upper_bound: 0.0013307172510672034
+    pilot_run_id: pilot-I-L-101-20260812T113715.481992Z-71a6c3e2d67b
+  aggregation: sample_weighted_gradient
+configurations: [I-L, I-P, I-OR, I-ER]
+linked_round_counts: [1, 5, 10]
+linkage_conditions: [stable_correct, shuffled_each_round, correct_25pct, correct_50pct, correct_75pct, deliberately_permuted]
+reconstruction:
+  solver: direct_one_sided_Jacobi_SVD_in_Go
+  ridge_alpha: 0.0
+  rank_tolerance: max_shape_times_smax_times_machine_epsilon
+  interpretation: underdetermined_minimum_norm_estimate_no_unique_reconstruction_claim
+activity_probe:
+  type: L2_multinomial_logistic_regression
+  C: 1.0
+  C_selection: fixed_before_any_privacy_outcome
+  auxiliary_scope: O_1_attacker_auxiliary_partition
+  feasibility_note: one_frozen_auxiliary_record_per_activity_precludes_stratified_C_tuning
+correctness_tolerance:
+  max_absolute_gradient_error: 0.0001
+  relative_l2_gradient_error: 0.0001
+  model_parameter_deviation: 0.002
+  training_loss_difference: 0.0001
+  final_rmse_difference: 0.001
+ckks_parameter_file: results/processed/study1_ckks_parameters.json
+trust:
+  owner: trusted_own_data
+  executor: honest_but_curious
+  aggregator: trusted_decryption_and_aggregation
+  collusion: none

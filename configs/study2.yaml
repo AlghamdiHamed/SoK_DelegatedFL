@@ -1,0 +1,66 @@
+schema_version: 1
+status: protocol_frozen_after_lean_final_amendment
+dataset: PAMAP2_Protocol_only
+subjects:
+  O_1: [S1, S2, S3]
+  O_2: [S4, S5, S6]
+  O_3: [S7, S8, S9]
+activities: [1, 2, 3, 4, 5, 6, 7, 12, 13, 16, 17, 24]
+sample_hz: 100
+window_seconds: 2.56
+stride_seconds: 1.28
+window_rows: 256
+stride_rows: 128
+purity_min: 0.90
+guard_rows_each_side: 256
+partitions:
+  learning: 0.50
+  utility_test: 0.20
+  attacker_auxiliary: 0.15
+  attacker_target: 0.15
+selection_target_per_owner_activity:
+  learning: 24
+  utility_test: 8
+  attacker_auxiliary: 8
+  attacker_target: 8
+features:
+  locations: [hand, chest, ankle]
+  channels_per_location: [acc16_x, acc16_y, acc16_z, acc6_x, acc6_y, acc6_z, gyro_x, gyro_y, gyro_z, magnet_x, magnet_y, magnet_z]
+  reduction: temporal_mean
+  dimension: 36
+  forbidden: [heart_rate, temperature, orientation, subject_id, timestamp]
+model:
+  widths: [36, 128, 64, 32, 12]
+  hidden_activation: ReLU
+  loss: cross_entropy
+  optimizer: SGD
+  learning_rate: 0.02
+  batch_size: 32
+  local_epochs: 1
+  rounds: 10
+  participation: full
+  aggregation: sample_weighted_FedAvg
+configurations:
+  II-L: {cut: local}
+  II-S: {cut: conventional_after_128, labels_at: executor}
+  II-U-E: {owner_prefix: [36, 128], executor: [128, 64, 32], owner_suffix: [32, 12]}
+  II-U-D: {owner_prefix: [36, 128, 64], executor: [64, 32], owner_suffix: [32, 12]}
+  II-U-H: {same_as: II-U-E, hmac: true}
+privacy_rounds: [1, 5, 10]
+cut_comparison_primary_privacy_view: z_and_g
+cut_comparison_primary_privacy_round: 10
+probe:
+  type: L2_multinomial_logistic_regression
+  C: [0.01, 0.1, 1, 10]
+  secrets: [activity_12_class, subject_O1_closed_set]
+  views: [z, g, z_and_g, linked]
+  controls: [majority_prior, shuffled_labels]
+hmac:
+  algorithm: HMAC-SHA-256
+  key_bytes: 32
+  nonce_bytes: 16
+  tag_bytes: 32
+  envelope_fields: [protocol_version, owner_id, executor_id, task_id, round_id, batch_id, cut_id, model_state_hash, sample_count, sequence_number, nonce, payload_hash]
+work_evasion:
+  partial_fractions: [0.25, 0.50, 0.75]
+  manipulations: [partial_execution, stale_work, sign_modification, sample_substitution]

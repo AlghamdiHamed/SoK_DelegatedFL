@@ -1,0 +1,27 @@
+schema_version: 1
+protocol_version: dfl-exp/1
+frame:
+  length_prefix: uint64_big_endian
+  header_length: uint32_big_endian
+  header_encoding: canonical_json_utf8
+  payload_encoding: binary
+max_frame_bytes: 1073741824
+addresses:
+  O_1: 192.168.0.146
+  O_2: 192.168.0.66
+  O_3: 192.168.0.118
+  E: 192.168.0.57
+  A: 192.168.0.49
+ports:
+  study1_executor: 7001
+  study1_aggregator: 7002
+  study2_executor: 7001
+  study2_aggregator: 7002
+tcp:
+  nodelay: true
+  keepalive_seconds: 30
+  connect_timeout_seconds: 10
+  io_timeout_seconds: 600
+units:
+  communication_storage: bytes
+  display_binary: MiB

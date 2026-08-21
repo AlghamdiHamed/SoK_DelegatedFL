@@ -1,0 +1,35 @@
+schema_version: 1
+physical_roles:
+  O_1:
+    kind: owner
+    expected_model: Raspberry Pi 4
+    expected_ram_gib: null
+    placement_changes: true
+  O_2:
+    kind: owner
+    expected_model: Raspberry Pi 4
+    expected_ram_gib: null
+    placement_changes: false
+  O_3:
+    kind: owner
+    expected_model: Raspberry Pi 5
+    expected_ram_gib: null
+    placement_changes: false
+  E:
+    kind: executor
+    expected_cpu_contains: Intel(R) Core(TM) i9
+    expected_ram_gib: 32
+  A:
+    kind: aggregator
+    expected_model: OptiPlex 7010
+    expected_chassis: desktop
+    expected_cpu_contains: Intel(R) Core(TM) i5-3470
+    expected_ram_gib: 8
+    amendment: separate_aggregator_substitution_before_final_five_role_run
+measurement:
+  warmups: 2
+  repetitions: 3
+  fresh_process_required: true
+  peak_rss_unit: MiB
+  direct_power_meter: null
+  thermal_throttling_invalidates_run: true

@@ -235,6 +235,3 @@ A complete full campaign must report 90 completed units and `"passed": true`. No
 - Study I does not cover executor-aggregator collusion, secret-key compromise, malicious aggregators, or malicious cryptographic implementations.
 - Absence of the opened-residual channel in I-ER is not a proof of complete privacy.
 - Acceptance of a fresh valid-key work-evasion message is not an HMAC failure; it demonstrates the distinction between authentication and prescribed-work assurance.
-
-See [`STUDY_PROTOCOL.md`](STUDY_PROTOCOL.md) for the complete protocol and [`CLAIMS.md`](CLAIMS.md) for the restricted claim ledger.
-# SoK_DelegatedFL

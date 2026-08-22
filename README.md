@@ -33,7 +33,6 @@ The final five-role testbed was:
 | E | Intel Core i9 workstation, 32 GB RAM | Delegate/executor and experiment controller |
 | A | Dell OptiPlex 7010, Core i5-3470, 8 GB RAM | Physically separate aggregator and Study-I decryption authority |
 
-The aggregator substitution and Python-version amendment are disclosed in [`STUDY_PROTOCOL.md`](STUDY_PROTOCOL.md). [`CLAIMS.md`](CLAIMS.md) defines the permitted interpretations.
 
 ## Configurations
 

@@ -1,0 +1,13 @@
+{
+  "seed": 101,
+  "rounds": 10,
+  "target_owner": "O_1",
+  "widths_descending": [64, 32, 16, 1],
+  "additional_budgets_mib": [16, 64, 256],
+  "study2_configurations": ["II-L", "II-U-E", "II-U-D"],
+  "study1_configurations": ["I-L", "I-ER"],
+  "idle_repetitions": 3,
+  "trial_timeout_seconds": 3600,
+  "baseline_definition": "median cgroup idle-startup peak, including the same shell launcher; before data/model/cryptographic setup",
+  "limit_definition": "idle_bytes + additional_budget_mib * 1048576; MemorySwapMax=0"
+}

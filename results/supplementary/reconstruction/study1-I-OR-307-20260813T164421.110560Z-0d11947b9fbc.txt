@@ -1,0 +1,66 @@
+Partition counts for O_1 (important manuscript-vs-code check): {'attacker_auxiliary': 12, 'attacker_target': 36, 'learning': 120, 'utility_test': 48}
+Published Go privacy/main.go: readRecords(..., "learning") for its target.
+Thus this audit matches O_1 learning (NOT attacker_target).
+Samples reconstructed by matching code: 120
+Samples labeled attacker_target in O_1 manifest: 36
+Reference zero-vector relative L2: 1.0
+Auxiliary-feature-mean baseline relative L2: 0.71453204
+
+R = 1 rank = 1 condition = 1
+singular values: [1.0]
+raw_relative_L2 = 1.0
+standardized_RMSE = 2.3673249716354525
+oracle_noiseless_min_norm_feature_relL2 = 1.0
+round residual/linear equation discrepancy RMSE = 8.328651186854033e-11
+SVD pseudoinverse solver vs clean projection difference relL2 = 7.126885496872522e-13
+Ridge (predeclared lambdas, NOT target-selected):
+  lambda_rel=1e-12: relL2=1
+  lambda_rel=1e-10: relL2=1
+  lambda_rel=1e-08: relL2=1
+  lambda_rel=1e-06: relL2=1
+  lambda_rel=0.0001: relL2=1
+
+R = 5 rank = 5 condition = 13660.8
+singular values: [5.87950768, 0.939547723, 0.444872736, 0.016012648, 0.000430392056]
+raw_relative_L2 = 0.08172894181704532
+standardized_RMSE = 0.7277080657403872
+oracle_noiseless_min_norm_feature_relL2 = 0.08172894181704432
+round residual/linear equation discrepancy RMSE = 3.2930567009260584e-10
+SVD pseudoinverse solver vs clean projection difference relL2 = 5.217372080589025e-09
+Ridge (predeclared lambdas, NOT target-selected):
+  lambda_rel=1e-12: relL2=0.0817289607
+  lambda_rel=1e-10: relL2=0.0819109368
+  lambda_rel=1e-08: relL2=0.210471647
+  lambda_rel=1e-06: relL2=0.309766847
+  lambda_rel=0.0001: relL2=0.431905838
+Per-channel checks (raw and auxiliary-std-normalized):
+  x_00_chest_acc16_x             rawRMSE=1.2855203, aux_sd=1.1078864, normalizedRMSE=1.1603358
+  x_01_chest_acc16_y             rawRMSE=0.60218042, aux_sd=1.7030068, normalizedRMSE=0.35359837
+  x_02_chest_acc16_z             rawRMSE=2.6072547, aux_sd=4.3149624, normalizedRMSE=0.60423578
+  x_03_chest_acc6_x              rawRMSE=1.2601938, aux_sd=1.1167603, normalizedRMSE=1.1284371
+  x_04_chest_acc6_y              rawRMSE=0.59271087, aux_sd=1.6827156, normalizedRMSE=0.35223474
+  x_05_chest_acc6_z              rawRMSE=2.595247, aux_sd=4.3437442, normalizedRMSE=0.59746774
+  x_06_chest_gyro_x              rawRMSE=0.088113843, aux_sd=0.087001876, normalizedRMSE=1.0127809
+  x_07_chest_gyro_y              rawRMSE=0.26984645, aux_sd=0.31356745, normalizedRMSE=0.86056906
+  x_08_chest_gyro_z              rawRMSE=0.1374917, aux_sd=0.13780965, normalizedRMSE=0.99769279
+  x_09_chest_magnet_x            rawRMSE=0.19365874, aux_sd=21.673562, normalizedRMSE=0.0089352519
+  x_10_chest_magnet_y            rawRMSE=0.41585624, aux_sd=17.221825, normalizedRMSE=0.024147048
+  x_11_chest_magnet_z            rawRMSE=0.66985722, aux_sd=17.707388, normalizedRMSE=0.03782925
+
+R = 10 rank = 10 condition = 4.61879e+13
+singular values: [9.06920896, 0.992961595, 0.879989448, 0.101156578, 0.00816188547, 1.07768656e-05, 1.26003398e-08, 1.40573721e-12, 2.66131887e-13, 1.96354775e-13]
+raw_relative_L2 = 33.31155295361911
+standardized_RMSE = 2612.727548913654
+oracle_noiseless_min_norm_feature_relL2 = 0.004492731700696419
+round residual/linear equation discrepancy RMSE = 3.5896340569430593e-10
+SVD pseudoinverse solver vs clean projection difference relL2 = 0.9973051699513282
+Ridge (predeclared lambdas, NOT target-selected):
+  lambda_rel=1e-12: relL2=0.0610663724
+  lambda_rel=1e-10: relL2=0.0810655101
+  lambda_rel=1e-08: relL2=0.0817804362
+  lambda_rel=1e-06: relL2=0.214785234
+  lambda_rel=0.0001: relL2=0.387589362
+
+IMPORTANT: Does not validate manuscript numbers unless the exact immutable I-OR runs
+and matching code/configuration used for the submitted version are supplied.
+Nonzero initialization requires a NEW matched run; cannot infer results from old logs.

@@ -1,0 +1,422 @@
+[
+  {
+    "budget_mib": 16,
+    "configuration": "II-L",
+    "logical_parameters": 42276876,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 676430016,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 64
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-L",
+    "logical_parameters": 42276876,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 676430016,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 64
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-L",
+    "logical_parameters": 42276876,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 676430016,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 64
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-U-E",
+    "logical_parameters": 42276876,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 508633280,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 64
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-U-E",
+    "logical_parameters": 42276876,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 508633280,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 64
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-U-E",
+    "logical_parameters": 42276876,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 508633280,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 64
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-U-D",
+    "logical_parameters": 42276876,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 642867392,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 64
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-U-D",
+    "logical_parameters": 42276876,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 642867392,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 64
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-U-D",
+    "logical_parameters": 42276876,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 642867392,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 64
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-L",
+    "logical_parameters": 10652684,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 170442944,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 32
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-L",
+    "logical_parameters": 10652684,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 170442944,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 32
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-L",
+    "logical_parameters": 10652684,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 170442944,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 32
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-U-E",
+    "logical_parameters": 10652684,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 128487616,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 32
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-U-E",
+    "logical_parameters": 10652684,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 128487616,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 32
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-U-E",
+    "logical_parameters": 10652684,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 128487616,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 32
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-U-D",
+    "logical_parameters": 10652684,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 162050240,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 32
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-U-D",
+    "logical_parameters": 10652684,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 162050240,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 32
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-U-D",
+    "logical_parameters": 10652684,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 162050240,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 32
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-L",
+    "logical_parameters": 2704908,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 43278528,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 16
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-L",
+    "logical_parameters": 2704908,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 43278528,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 16
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-L",
+    "logical_parameters": 2704908,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 43278528,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 16
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-U-E",
+    "logical_parameters": 2704908,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 32786624,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 16
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-U-E",
+    "logical_parameters": 2704908,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 32786624,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 16
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-U-E",
+    "logical_parameters": 2704908,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 32786624,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 16
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-U-D",
+    "logical_parameters": 2704908,
+    "predicted_fit": false,
+    "predicted_increment_bytes": 41179328,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 16
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-U-D",
+    "logical_parameters": 2704908,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 41179328,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 16
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-U-D",
+    "logical_parameters": 2704908,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 41179328,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 16
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-L",
+    "logical_parameters": 15468,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 247488,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 1
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-L",
+    "logical_parameters": 15468,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 247488,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 1
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-L",
+    "logical_parameters": 15468,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 247488,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 1
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-U-E",
+    "logical_parameters": 15468,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 206144,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 1
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-U-E",
+    "logical_parameters": 15468,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 206144,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 1
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-U-E",
+    "logical_parameters": 15468,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 206144,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 1
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "II-U-D",
+    "logical_parameters": 15468,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 239168,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 1
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "II-U-D",
+    "logical_parameters": 15468,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 239168,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 1
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "II-U-D",
+    "logical_parameters": 15468,
+    "predicted_fit": true,
+    "predicted_increment_bytes": 239168,
+    "prediction": "idle + retained input/state/model weights + trained gradients; temporaries omitted",
+    "study": "study2",
+    "width": 1
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "I-L",
+    "logical_parameters": 13,
+    "predicted_fit": null,
+    "predicted_increment_bytes": null,
+    "prediction": "no Go/CKKS allocation predictor; fixed-workload measured boundary",
+    "study": "study1",
+    "width": 1
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "I-L",
+    "logical_parameters": 13,
+    "predicted_fit": null,
+    "predicted_increment_bytes": null,
+    "prediction": "no Go/CKKS allocation predictor; fixed-workload measured boundary",
+    "study": "study1",
+    "width": 1
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "I-L",
+    "logical_parameters": 13,
+    "predicted_fit": null,
+    "predicted_increment_bytes": null,
+    "prediction": "no Go/CKKS allocation predictor; fixed-workload measured boundary",
+    "study": "study1",
+    "width": 1
+  },
+  {
+    "budget_mib": 16,
+    "configuration": "I-ER",
+    "logical_parameters": 13,
+    "predicted_fit": null,
+    "predicted_increment_bytes": null,
+    "prediction": "no Go/CKKS allocation predictor; fixed-workload measured boundary",
+    "study": "study1",
+    "width": 1
+  },
+  {
+    "budget_mib": 64,
+    "configuration": "I-ER",
+    "logical_parameters": 13,
+    "predicted_fit": null,
+    "predicted_increment_bytes": null,
+    "prediction": "no Go/CKKS allocation predictor; fixed-workload measured boundary",
+    "study": "study1",
+    "width": 1
+  },
+  {
+    "budget_mib": 256,
+    "configuration": "I-ER",
+    "logical_parameters": 13,
+    "predicted_fit": null,
+    "predicted_increment_bytes": null,
+    "prediction": "no Go/CKKS allocation predictor; fixed-workload measured boundary",
+    "study": "study1",
+    "width": 1
+  }
+]

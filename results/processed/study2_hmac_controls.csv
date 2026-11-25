@@ -1,0 +1,25 @@
+run_id,seed,control,expected_accept,observed_accept,reason,hmac_compute_ns,key_bytes,tag_bytes,replay_state_bytes,gate_pass
+study2-II-U-H-101-20260813T165139.269807Z-2127b8cb7e44,101,payload_modification,false,false,payload modification,11820,32,32,26,true
+study2-II-U-H-101-20260813T165139.269807Z-2127b8cb7e44,101,tag_modification,false,false,invalid tag,8963,32,32,26,true
+study2-II-U-H-101-20260813T165139.269807Z-2127b8cb7e44,101,exact_replay,false,false,exact envelope replay,9600,32,32,73,true
+study2-II-U-H-101-20260813T165139.269807Z-2127b8cb7e44,101,wrong_task,false,false,wrong context: task_id,8462,32,32,26,true
+study2-II-U-H-101-20260813T165139.269807Z-2127b8cb7e44,101,wrong_round,false,false,wrong context: round_id,7917,32,32,26,true
+study2-II-U-H-101-20260813T165139.269807Z-2127b8cb7e44,101,wrong_batch,false,false,wrong context: batch_id,7929,32,32,26,true
+study2-II-U-H-101-20260813T165139.269807Z-2127b8cb7e44,101,wrong_model_state_hash,false,false,wrong context: model_state_hash,8309,32,32,26,true
+study2-II-U-H-101-20260813T165139.269807Z-2127b8cb7e44,101,stale_sequence,false,false,stale sequence number,8920,32,32,73,true
+study2-II-U-H-211-20260813T165648.202476Z-d21e7d4562e4,211,payload_modification,false,false,payload modification,12658,32,32,26,true
+study2-II-U-H-211-20260813T165648.202476Z-d21e7d4562e4,211,tag_modification,false,false,invalid tag,9190,32,32,26,true
+study2-II-U-H-211-20260813T165648.202476Z-d21e7d4562e4,211,exact_replay,false,false,exact envelope replay,9644,32,32,73,true
+study2-II-U-H-211-20260813T165648.202476Z-d21e7d4562e4,211,wrong_task,false,false,wrong context: task_id,8916,32,32,26,true
+study2-II-U-H-211-20260813T165648.202476Z-d21e7d4562e4,211,wrong_round,false,false,wrong context: round_id,7528,32,32,26,true
+study2-II-U-H-211-20260813T165648.202476Z-d21e7d4562e4,211,wrong_batch,false,false,wrong context: batch_id,7611,32,32,26,true
+study2-II-U-H-211-20260813T165648.202476Z-d21e7d4562e4,211,wrong_model_state_hash,false,false,wrong context: model_state_hash,7873,32,32,26,true
+study2-II-U-H-211-20260813T165648.202476Z-d21e7d4562e4,211,stale_sequence,false,false,stale sequence number,9073,32,32,73,true
+study2-II-U-H-307-20260813T170138.519137Z-d5254d3c6ccb,307,payload_modification,false,false,payload modification,12048,32,32,26,true
+study2-II-U-H-307-20260813T170138.519137Z-d5254d3c6ccb,307,tag_modification,false,false,invalid tag,9119,32,32,26,true
+study2-II-U-H-307-20260813T170138.519137Z-d5254d3c6ccb,307,exact_replay,false,false,exact envelope replay,9712,32,32,73,true
+study2-II-U-H-307-20260813T170138.519137Z-d5254d3c6ccb,307,wrong_task,false,false,wrong context: task_id,8595,32,32,26,true
+study2-II-U-H-307-20260813T170138.519137Z-d5254d3c6ccb,307,wrong_round,false,false,wrong context: round_id,7753,32,32,26,true
+study2-II-U-H-307-20260813T170138.519137Z-d5254d3c6ccb,307,wrong_batch,false,false,wrong context: batch_id,7523,32,32,26,true
+study2-II-U-H-307-20260813T170138.519137Z-d5254d3c6ccb,307,wrong_model_state_hash,false,false,wrong context: model_state_hash,8086,32,32,26,true
+study2-II-U-H-307-20260813T170138.519137Z-d5254d3c6ccb,307,stale_sequence,false,false,stale sequence number,9507,32,32,73,true

@@ -73,7 +73,7 @@ study2/         Python/PyTorch implementation of Study II
 tests/          Protocol, preprocessing, integrity, and analysis tests
 ```
 
-Raw PAMAP2 recordings, secret keys, run logs, and measured results are not part of the source repository.
+The repository includes selected processed experimental results from the reference campaign. Raw PAMAP2 recordings, secret keys, and complete per-run logs are not distributed.
 
 ## Prerequisites
 
@@ -234,3 +234,23 @@ A complete full campaign must report 90 completed units and `"passed": true`. No
 - Study I does not cover executor-aggregator collusion, secret-key compromise, malicious aggregators, or malicious cryptographic implementations.
 - Absence of the opened-residual channel in I-ER is not a proof of complete privacy.
 - Acceptance of a fresh valid-key work-evasion message is not an HMAC failure; it demonstrates the distinction between authentication and prescribed-work assurance.
+
+## Reference results and supplementary analyses
+
+- `results/processed/`: selected processed results from the
+  original August 2026 experimental campaign.
+- `results/feasibility-budget/`: measured memory-budget outcomes
+  and analytical predictions from the November 2026 campaign.
+- `results/supplementary/reconstruction/`: reconstruction audits
+  using the original Study-I learning runs.
+- `analysis/study1_reconstruction_audit.py`: read-only numerical
+  audit of reconstruction error, conditioning and regularization.
+
+The memory budgets are additional allowances relative to the
+idle runtime footprint, rather than absolute device memory limits.
+The supplementary reconstruction audit does not constitute a new
+encrypted training campaign.
+
+Complete raw run directories are required to repeat the numerical
+audit directly from the recorded executor views. These directories
+are not included in this repository.

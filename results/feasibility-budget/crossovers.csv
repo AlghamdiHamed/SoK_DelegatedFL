@@ -1,0 +1,10 @@
+configuration,budget_mib,predicted_largest_fitting_tested_width,measured_largest_fitting_tested_width,measured_smallest_failing_tested_width,all_widths_measured,observed_monotone,failure_causes
+II-L,16,1,1,16,True,True,infeasible_oom
+II-L,64,16,1,16,True,True,infeasible_oom
+II-L,256,32,16,32,True,True,infeasible_oom
+II-U-E,16,1,1,16,True,True,infeasible_oom
+II-U-E,64,16,1,16,True,True,infeasible_oom
+II-U-E,256,32,16,32,True,True,infeasible_oom
+II-U-D,16,1,1,16,True,True,infeasible_oom
+II-U-D,64,16,1,16,True,True,infeasible_oom
+II-U-D,256,32,16,32,True,True,infeasible_oom
